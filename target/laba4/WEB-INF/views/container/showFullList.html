@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>List</title>
+</head>
+<body>
+<div th:each="number:${number}">
+  <a th:text="${number.getID()}">gfh</a>
+  <a>;</a>
+  <a th:text="${number.getName()}">gfh</a>
+  <a>;</a>
+  <a th:text="${number.getGender()}">gfh</a>
+  <a>;</a>
+  <a th:text="${number.getBirthDate()}">gfh</a>
+  <a>;</a>
+  <a th:text="${number.getDivision().getName()}">gfh</a>
+  <a>;</a>
+  <a th:text="${number.getSalary()}">gfh</a>
+</div>
+</body>
+</html>
